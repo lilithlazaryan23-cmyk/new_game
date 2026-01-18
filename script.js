@@ -1,147 +1,143 @@
 const wordCategories = {
     nature: [
-        { word: "մառախուղ", hint: "Ինչպե՞ս է կոչվում մթնոլորտում առաջացող խիտ գոլորշին, որը նվազեցնում է տեսանելիությունը:" },
-        { word: "հրաբուխ", hint: "Ո՞ր բնական երևույթն է ժայթքում և դուրս հանում լավա ու մոխիր։" },
-        { word: "հոսանք", hint: "Ինչպե՞ս է կոչվում գետերի կամ օվկիանոսի ջրերի շարունակական շարժումը որոշակի ուղղությամբ:" },
-        { word: "տարափ", hint: "Ի՞նչ երևույթ է առաջանում, երբ շատ կարճ ժամանակում տեղում է հորդառատ անձրև։" },
-        { word: "սողանք", hint: "Ինչպե՞ս է կոչվում հողի կամ քարերի մեծ զանգվածի հանկարծակի տեղաշարժը լեռնալանջից։" },
-        { word: "բերքառատություն", hint: "Ինչպե՞ս է կոչվում հողի որակը, երբ այն պիտանի է գյուղատնտեսության համար։" },
-        { word: "օզոնայինշերտ", hint: "Ո՞րն է Երկրի մթնոլորտի այն մասը, որը պաշտպանում է մեզ արեգակնային վտանգավոր ճառագայթումից։" },
-        { word: "սառցադաշտ", hint: "Ինչպե՞ս է կոչվում մեծածավալ սառույցի զանգվածը, որը դանդաղ շարժվում է։" },
-        { word: "երկրաշարժ", hint: "Ինչպե՞ս է կոչվում հողի հանկարծակի ցնցումը, որը կարող է ավերածություններ առաջացնել։" },
-        { word: "կենսաբազմազանություն", hint: "Ի՞նչ բառով է կոչվում որոշակի տարածքում ապրող կենդանիների և բույսերի ամբողջությունը։" }
+        { word: "fog", hint: "Thick vapor in the atmosphere that reduces visibility." },
+        { word: "volcano", hint: "A mountain that erupts with lava and gas." },
+        { word: "current", hint: "Continuous movement of water in a river or ocean." },
+        { word: "shower", hint: "A brief period of rain." },
+        { word: "landslide", hint: "Earth or rock sliding down a mountain slope." },
+        { word: "glacier", hint: "A huge mass of ice moving slowly over land." },
+        { word: "hurricane", hint: "A severe tropical storm with high winds." },
+        { word: "drought", hint: "A long period with no rain leading to water shortage." },
+        { word: "canyon", hint: "A deep gorge, typically one with a river flowing through it." },
+        { word: "rainbow", hint: "An arch of colors in the sky caused by rain and sun." }
     ],
     food: [
-        { word: "կարդամոն", hint: "Ի՞նչ արևելյան համեմունք է օգտագործվում ինչպես աղի, այնպես էլ քաղցր ուտեստների մեջ՝ իր բուրավետության համար։" },
-        { word: "կոճապղպեղ", hint: "Ո՞ր արմատն է հայտնի իր կծու համով և օգտագործվում թեյերում ու ուտեստներում։" },
-        { word: "թրթնջուկ", hint: "Ո՞ր թթվաշ համով կանաչիի տեսակը հաճախ օգտագործվում է ապուրների և աղցանների մեջ։" },
-        { word: "բուրատա", hint: "Ո՞ր իտալական պանրի տեսակն ունի փափուկ, կրեմային միջուկ և հիշեցնում է մոցարելլան։" },
-        { word: "սուսամբար", hint: "Ի՞նչ բուրավետ կանաչի է հաճախ օգտագործվում մսային ուտեստների համեմման համար։" },
-        { word: "գարեջուր", hint: "Ո՞ր խմիչքն է պատրաստվում գարեհացից և օգտագործվում տարբեր համերով ու տեսակներով։" },
-        { word: "մանանեխ", hint: "Ի՞նչ համեմունք է պատրաստվում դեղին կամ սև սերմերից և ունի կծու համ։" },
-        { word: "հալվա", hint: "Ո՞ր արևելյան քաղցրեղենն է պատրաստվում քունջութից կամ արևածաղկի սերմերից։" },
-        { word: "բուսակաթ", hint: "Ի՞նչ անվանում ունի կաթի այլընտրանքը, որը ստացվում է նուշից, վարսակից կամ կոկոսից։" },
-        { word: "թարխուն", hint: "Ի՞նչ կանաչի է հայտնի իր յուրահատուկ բույրով և օգտագործվում հայկական խոհանոցում ու ըմպելիքներում։" }
+        { word: "cardamom", hint: "An aromatic oriental spice." },
+        { word: "ginger", hint: "A spicy root used in cooking and teas." },
+        { word: "sorrel", hint: "A sour green herb used in soups." },
+        { word: "burrata", hint: "Italian cheese with a creamy center." },
+        { word: "saffron", hint: "The world's most expensive orange-colored spice." },
+        { word: "cinnamon", hint: "A sweet spice made from the bark of a tree." },
+        { word: "avocado", hint: "A green fruit often used to make guacamole." },
+        { word: "truffle", hint: "An expensive fungus that grows underground." },
+        { word: "pancake", hint: "A flat cake made of thin batter and fried." },
+        { word: "lasagna", hint: "Italian dish made of layers of pasta and sauce." }
     ],
     music: [
-        { word: "սիմֆոնիա", hint: "Ի՞նչ երաժշտական ստեղծագործություն է բազմախմբություն, որն իր մեջ ներառում է բազմաթիվ մասեր՝ առանձին կատարմամբ։" },
-        { word: "կլավիշ", hint: "Ի՞նչ երաժշտական գործիքն է կազմված սպիտակ և սև բանաձևերով, որն նվագվում է մատներով։" },
-        { word: "հարմոնիկա", hint: " Ի՞նչ գործիքն է փոքր, հեշտ տեղափոխվող և մեծապես օգտագործվում ժողովրդական երաժշտության մեջ։" },
-        { word: "ակորդ", hint: "Ի՞նչ երաժշտական կառուցվածք է, որը կազմված է միաժամանակ հնչող երեք կամ ավելի տոնի համադրությունից։" },
-        { word: "մելոդիա", hint: "Ի՞նչ երաժշտական գործիքն է ստեղծում միահյուսված, հստակ հնչող և լավ ճանաչվող առանձին երանգներ։" },
-        { word: "արկեստր", hint: "Ի՞նչ երաժշտական խումբ է, որին սովորաբար կազմում են շատ նվագախմբեր՝ լարային և փչող գործիքներով։" },
-        { word: "ֆուգա", hint: "Ի՞նչ երաժշտական ձևն է, որտեղ թեման կրկնվում է՝ տարբեր սարքերով և եղանակներով։" },
-        { word: "կոմիտաս", hint: "Ո՞ր կոմպոզիտորի անունն է Սողոմոն Սողոմոնյան" },
-        { word: "կոնցերտ", hint: "Ի՞նչ երաժշտական ստեղծագործություն է, որտեղ հիմնականում միայն մի գործիք է առանձնանում, իսկ մյուսները պահպանում են համալիրվածություն։" },
-        { word: "ջազ", hint: "Ի՞նչ երաժշտության ոճը բնութագրվում է ազատ ինտերպրետացիայով, իմպրովիզացիայով և սահուն ռիթմով։" },
+        { word: "melody", hint: "A sequence of musical notes." },
+        { word: "orchestra", hint: "A large group of musicians playing together." },
+        { word: "symphony", hint: "An elaborate musical composition for an orchestra." },
+        { word: "harmony", hint: "The combination of different musical notes played together." },
+        { word: "rhythm", hint: "A strong, regular, repeated pattern of sound." },
+        { word: "trumpet", hint: "A brass musical instrument with a flared bell." },
+        { word: "violin", hint: "A string instrument played with a bow." },
+        { word: "guitar", hint: "A stringed instrument usually with six strings." },
+        { word: "opera", hint: "A theatrical work set to music for singers." },
+        { word: "concert", hint: "A live musical performance." }
     ],
     technology: [
-        { word: "միգրացիա", hint: "Ո՞ր երևույթն է վերաբերում մարդկանց կամ կենդանիների տեղաշարժին՝ տարածության մեջ՝ պայմանավորված տարբեր պատճառներով։" },
-        { word: "կրիպտոգրաֆիա", hint: "Ի՞նչ տեխնոլոգիա է օգտագործվում տվյալների գաղտնագրման և անօրինական մուտքը կանխելու համար։" },
-        { word: "կրիպտոարժույթ", hint: "Ի՞նչ թվային արժույթն է ապահովում անանուն և անվտանգ ֆինանսական տրանսակցիաներ առանց կենտրոնացված համակարգերի։" },
-        { word: "վիրտուալություն", hint: "Ի՞նչ համակարգն է ստեղծում վիրտուալ միջավայր, որը չնայած իրական չի լինում, բայց կարող է զգացվել ինչպես իրական։" },
-        { word: "բիոգենետիկա ", hint: "Ի՞նչ գիտաուսումնասիրությունը հետազոտում է կենդանի օրգանիզմների ժառանգական կոդը և դրա փոփոխությունները։" },
-        { word: "նեյրոմորֆիզմ", hint: "Ի՞նչ տեխնոլոգիա է ընդօրինակում մարդկային նյարդային համակարգի կառուցվածքն ու գործառույթները։" },
-        { word: "հիբրիդացում", hint: "Ի՞նչ գործընթացն է համատեղում տարբեր տեխնոլոգիաներ կամ համակարգեր՝ բարելավելու նրանց արդյունավետությունը։" },
-        { word: "էկոհամակարգ", hint: "Ի՞նչ բառով է կոչվում բնական միջավայրի բաղադրությունը, որը ներառում է բոլոր կենդանի և ոչ կենդանի բաղադրիչները։" },
-        { word: "ավտոմատացում", hint: "Ի՞նչ գործընթացը ենթադրում է մարդկային միջամտության նվազեցում՝ աշխատանքի կատարելությունը մեքենաների կամ համակարգերի միջոցով։" },
-        { word: "դիջիտալացում", hint: "Ի՞նչ գործընթաց է վերաբերում տվյալների ու տեխնոլոգիաների թվայնացմանը։" },
+        { word: "cryptography", hint: "The art of writing or solving codes." },
+        { word: "automation", hint: "The use of machines to perform tasks automatically." },
+        { word: "processor", hint: "The main part of a computer that processes data." },
+        { word: "software", hint: "The programs and data used by a computer." },
+        { word: "database", hint: "A structured set of data held in a computer." },
+        { word: "internet", hint: "The global network connecting millions of computers." },
+        { word: "robotics", hint: "The branch of tech dealing with design of robots." },
+        { word: "circuit", hint: "A complete path around which electricity flows." },
+        { word: "keyboard", hint: "A panel of keys used to input text into a computer." },
+        { word: "monitor", hint: "The screen used to display visual output." }
     ],
     animals: [
-        { word: "անգղ", hint: "Ի՞նչ թռչուն է հայտնի իր բարձր թռիչքով և կարողությամբ երկար հեռավորություններ թռչելու համար։" },
-        { word: "պանդա", hint: "Ի՞նչ կենդանին է մշտապես բամբուկով սնվում, ունի մեծ գլուխ և աչքերի շուրջ հատուկ լույսավոր նշաններ։" },
-        { word: "վագրաձի", hint: "Ո՞ր կենդանին ունի գծավոր մաշկ:" },
-        { word: "կենգուրու", hint: "Ի՞նչ կենդանին է հայտնի իր ուժեղ թաթերով և մեծ պոչով, որը ցատկում է մեծ հեռավորություններ։" },
-        { word: "փոսպոտոր", hint: "Ի՞նչ կենդանին է զբաղվում հիմնականում գիշերային կյանքով՝ փորելով անցքեր և կառուցելով բնապաշարներ։" },
-        { word: "ձի", hint: "Ի՞նչ կենդանին է արագ, գեղեցիկ ու ուժեղ, օգտագործվում որպես տեղափոխման միջոց և սպորտում։" },
-        { word: "եղնիկ", hint: "Ի՞նչ կենդանին է հայտնի իր երկար, փայլուն եղունգներով ու գեղեցիկ պոչով, վազում է դաշտերում։" },
-        { word: "վիշապ", hint: "Ի՞նչ քնաբեր և առեղծվածային կենդանին է պատմական ու ֆանտաստիկ մշակույթներում՝ պարունակում հրի կամ միստիկ ուժեր։" },
-        { word: "մայմոն ", hint: "Ի՞նչ կենդանին է ապրում tropic գոտիներում, ունի խելացի վարք և հիմնականում ընթանում է ծառերից ծառ։" },
-        { word: "կապիկ", hint: "Ի՞նչ կենդանին է ապրում tropic գոտիներում, ունի խելացի վարք և հիմնականում ընթանում է ծառերից ծառ։" }
+        { word: "vulture", hint: "A bird that eats dead animals." },
+        { word: "panda", hint: "A black and white bear that eats bamboo." },
+        { word: "zebra", hint: "A wild horse with black and white stripes." },
+        { word: "kangaroo", hint: "An Australian animal that moves by jumping." },
+        { word: "dolphin", hint: "A very intelligent sea mammal." },
+        { word: "elephant", hint: "The largest living land animal with a trunk." },
+        { word: "giraffe", hint: "An animal with a very long neck." },
+        { word: "penguin", hint: "A flightless bird that lives in Antarctica." },
+        { word: "leopard", hint: "A large cat with a spotted coat." },
+        { word: "hamster", hint: "A small rodent often kept as a pet." }
     ],
     sports: [
-        { word: "մարաթոն ", hint: " սպորտային մրցույթ է, որտեղ մարզիկները պետք է վազեն 42.195 կմ։" },
-        { word: "սնոուբորդինգ", hint: "Ի՞նչ սպորտաձև է, որտեղ մարզիկները սահում են ձյունածածկ լանջերով հատուկ տախտակի վրա։" },
-        { word: "ֆենսինգ", hint: "Ի՞նչ սպորտաձև է, որտեղ մարզիկները մրցում են սուսերներով և փորձում են հարվածել միմյանց։" },
-        { word: "պարաշյուտիզմ", hint: "Ի՞նչ էքստրեմալ սպորտաձև է, որտեղ մարզիկները թռչում են բարձրությունից և օգտագործում են պարաշյուտ։" },
-        { word: "կայակինգ", hint: "Ի՞նչ ջրային սպորտաձև է, որտեղ մարզիկները նավարկում են նեղ ու արագաշարժ նավակով։" },
-        { word: "կուրսինգ", hint: "Ի՞նչ սպորտաձև է, որտեղ շները մրցում են արագավազքում՝ հետևելով արհեստական որսին։" },
-        { word: "քիքբոքսինգ", hint: "Ի՞նչ մարտական սպորտաձև է, որը համատեղում է բռնցքամարտի և ոտնային հարվածների տեխնիկան։" },
-        { word: "քարլինգ", hint: "Ի՞նչ ձմեռային սպորտաձև է, որտեղ թիմերը փորձում են մետաղյա քարերը սահեցնել հատուկ նշանակված շրջանների մեջ։" },
-        { word: "ջրացատկ", hint: "Ի՞նչ սպորտաձև է, որտեղ մարզիկները կատարում են բարձրությունից ջրի մեջ գեղագիտական թռիչքներ։" },
-        { word: "սքեյթբորդինգ", hint: "Ի՞նչ սպորտաձև է, որտեղ մարզիկները շարժվում են փոքր անիվներով տախտակի վրա և կատարում հնարքներ։" },
+        { word: "marathon", hint: "A long-distance running race." },
+        { word: "stadium", hint: "A large building for sports events." },
+        { word: "athlete", hint: "A person who competes in sports." },
+        { word: "football", hint: "The most popular sport in the world." },
+        { word: "swimming", hint: "Moving through water using arms and legs." },
+        { word: "baseball", hint: "A game played with a bat and ball on a diamond." },
+        { word: "tennis", hint: "A game played with rackets and a small ball." },
+        { word: "cycling", hint: "The sport of riding a bicycle." },
+        { word: "fencing", hint: "The sport of fighting with swords." },
+        { word: "archery", hint: "The sport of shooting with a bow and arrows." }
     ],
     culture: [
-        { word: "խաչքար", hint: "Ի՞նչ քարե հուշակոթող է հայկական մշակույթի յուրահատուկ տարրը, զարդարված խաչաձև փորագրություններով։" },
-        { word: "դուդուկ", hint: "Ի՞նչ հայկական ազգային երաժշտական գործիք է պատրաստվում ծիրանենուց և ունի մեղմ, հուզիչ ձայն։" },
-        { word: "լավաշ", hint: "Ի՞նչ հայկական ավանդական հաց է բարակ, փափուկ և թխվում է թոնրում։" },
-        { word: "տարազ", hint: "Ի՞նչ է կոչվում հայկական ավանդական հագուստը, որը կրում էին տարբեր շրջանների բնակիչները։" },
-        { word: "քարահունջ", hint: "Ի՞նչ հայկական մեգալիթյան կառույց է հաճախ համեմատվում բրիտանական Սթոունհենջի հետ։" },
-        { word: "թառ", hint: "Ի՞նչ լարային երաժշտական գործիք է հայկական մշակույթում, որը լայն տարածում ունի Կովկասում։ " },
-        { word: "վերնիսաժ", hint: "Ի՞նչ է կոչվում Երևանի հայտնի բացօթյա շուկան, որտեղ վաճառում են հայկական ձեռագործ աշխատանքներ և հուշանվերներ։" },
-        { word: "մատենադարան", hint: "Ի՞նչ անունով է հայտնի հայկական հին ձեռագրերի պահոցը, որը համարվում է մշակութային և գիտական կենտրոն։" },
-        { word: "քոչարի", hint: "Ի՞նչ հայկական ազգային պար է, որը բնորոշվում է հուժկու ու ռազմատենչ շարժումներով։" },
-        { word: "տոլմա", hint: "Ի՞նչ հայկական ավանդական ուտեստ է, որը պատրաստվում է խաղողի տերևով փաթաթված մսով կամ բուսական միջուկով։" },
+        { word: "statue", hint: "A carved figure of a person or animal." },
+        { word: "heritage", hint: "Traditions and qualities passed down through history." },
+        { word: "museum", hint: "A place where historical objects are displayed." },
+        { word: "theatre", hint: "A building where plays are performed." },
+        { word: "festival", hint: "A day or period of celebration." },
+        { word: "sculpture", hint: "The art of making three-dimensional forms." },
+        { word: "literature", hint: "Written works like books and poems." },
+        { word: "painting", hint: "The art of using paint to create images." },
+        { word: "cinema", hint: "A place where films are shown." },
+        { word: "costume", hint: "A set of clothes worn by an actor." }
     ],
     matem: [
-        { word: "ալգորիթմ", hint: "Ի՞նչ կարգավորված քայլերի հաջորդականություն է, որը կիրառվում է խնդիրների լուծման համար։" },
-        { word: "մատրիցա", hint: "Ի՞նչ թվային կամ այլ տվյալների դասավորվածություն է ուղղահայաց ու հորիզոնական տողերով։" },
-        { word: "անհայտ ", hint: "Ի՞նչ անունով է կոչվում մաթեմատիկական հավասարման այն տարրը, որը պետք է գտնվի։" },
-        { word: "ածանցյալ", hint: "Ի՞նչ մաթեմատիկական հասկացություն է արտահայտում ֆունկցիայի փոփոխության արագությունը տվյալ կետում։" },
-        { word: "ինտեգրալ", hint: "Ի՞նչ մաթեմատիկական գործողություն է օգտագործվում մակերեսների հաշվարկման և կուտակման խնդիրների լուծման համար։" },
-        { word: "վեկտոր", hint: "Ի՞նչ մաթեմատիկական միավոր է, որը բնութագրվում է ուղղությամբ և մեծությամբ։" },
-        { word: "կոմբինատորիկա", hint: "Ի՞նչ մաթեմատիկական ճյուղ է ուսումնասիրում տարրերի դասավորությունների և համակցությունների հաշվարկը։" },
-        { word: "պարաբոլա ", hint: "Ի՞նչ է կոչվում երկրորդ աստիճանի գրաֆիկը, որը կարող է լինել բացվող կամ փակվող կոր։" },
-        { word: "արձանագրություն", hint: "Ի՞նչ մաթեմատիկական գործողություն է պարունակում բանաձևեր և թվային հավասարություններ՝ որևէ մեթոդ ապացուցելու համար։" },
-        { word: "լոգարիթմ", hint: "Ի՞նչ մաթեմատիկական գործողություն է, որը թույլ է տալիս գտնել որևէ թվի հիմքի աստիճանը։" },
+        { word: "equation", hint: "A math statement that two things are equal." },
+        { word: "geometry", hint: "The study of points, lines, and shapes." },
+        { word: "fraction", hint: "A part of a whole number." },
+        { word: "algebra", hint: "Math using letters to represent numbers." },
+        { word: "triangle", hint: "A shape with three sides and three angles." },
+        { word: "diameter", hint: "The width of a circle through its center." },
+        { word: "pyramid", hint: "A shape with a square base and four triangular sides." },
+        { word: "integral", hint: "A core concept in calculus." },
+        { word: "division", hint: "The process of splitting into equal parts." },
+        { word: "multiply", hint: "To add a number to itself multiple times." }
     ],
     gitnakanner: [
-        { word: "այնշտայն", hint: "Ո՞ր գիտնականը ձևակերպեց հարաբերականության տեսությունը։" },
-        { word: "նյուտոն", hint: "Ո՞ր ֆիզիկոսն է ձևակերպել ձգողության համընդհանուր օրենքը և շարժման երեք օրենքները։" },
-        { word: "տեսլա", hint: "Ո՞ր գյուտարարն ու ֆիզիկոսն է զարգացրել փոփոխական հոսանքի համակարգը և հայտնի է իր էլեկտրատեխնիկական գյուտերով։" },
-        { word: "գալիլեյ", hint: "Ո՞ր գիտնականը պաշտպանեց հելիոցենտրիկ տեսությունը և կատարելագործեց աստղադիտակը։" },
-        { word: "կյուրի", hint: "Ո՞ր կին գիտնականն է առաջինը ստացել Նոբելյան մրցանակ երկու տարբեր ոլորտներում՝ ֆիզիկայում և քիմիայում։" },
-        { word: "դարվին", hint: "Ո՞ր գիտնականն է առաջարկել էվոլյուցիայի տեսությունը և բնական ընտրության սկզբունքը։" },
-        { word: "պաստեր", hint: "Ո՞ր կենսաքիմիկոսն է ստեղծել պատվաստման և պաստերիզացման մեթոդները՝ կանխելով վարակիչ հիվանդությունները։" },
-        { word: "մենդելեև", hint: "Ո՞ր գիտնականն է ստեղծել քիմիական տարրերի պարբերական աղյուսակը։" },
-        { word: "շրյոդինգեր", hint: "Ո՞ր ֆիզիկոսն է հայտնի քվանտային մեխանիկայի հիմնարար մոդելներով և իր հայտնի '*********' կատու մտահանգմամբ։" },
-        { word: "հոքինգ", hint: "Ո՞ր տեսական ֆիզիկոսն է ուսումնասիրել սև խոռոչները և գրել հանրահայտ «Ժամանակի համառոտ պատմություն» գիրքը։" },
+        { word: "einstein", hint: "Physicist who developed the theory of relativity." },
+        { word: "newton", hint: "Scientist who discovered gravity." },
+        { word: "tesla", hint: "Inventor known for alternating current (AC)." },
+        { word: "curie", hint: "Scientist who studied radioactivity." },
+        { word: "darwin", hint: "Scientist who proposed the theory of evolution." },
+        { word: "galileo", hint: "Astronomer who used the first telescope." },
+        { word: "edison", hint: "Inventor of the light bulb." },
+        { word: "hawking", hint: "Physicist famous for his work on black holes." },
+        { word: "pasteur", hint: "Scientist who discovered pasteurization." },
+        { word: "mendel", hint: "The father of genetics." }
     ],
     trch: [
-        { word: "արծիվ", hint: "Ո՞ր թռչունն է հայտնի իր սուր տեսողությամբ և համարվում է ուժի ու ազատության խորհրդանիշ։" },
-        { word: "բու", hint: "Ո՞ր գիշերային թռչունն է հայտնի իր խելացիությամբ և գլուխը գրեթե 360 աստիճան պտտելու կարողությամբ։" },
-        { word: "ալբատրոս", hint: "Ո՞ր թռչունն է ունի ամենամեծ թևերի բացվածքը և կարող է ամիսներ շարունակ թռչել առանց վայրէջքի։" },
-        { word: "կռունկ", hint: "Ո՞ր թռչունն է խորհրդանշում հավատարմությունը, քանի որ կյանքի ընթացքում ունի միայն մեկ զուգընկեր։" },
-        { word: "կաչաղակ", hint: "Ո՞ր թռչունն է հայտնի իր խելամտությամբ և կարողությամբ ճանաչել իրեն հայելու մեջ։" },
-        { word: "փասյան", hint: "Ո՞ր թռչունն է աչքի ընկնում իր վառ գույնի փետուրներով և հաճախ համարվում է ազնվականության խորհրդանիշ։" },
-        { word: "սոխակ", hint: "Ո՞ր փոքրիկ թռչունն է հայտնի իր մելոդիկ երգով, որը հաճախ օգտագործվում է պոեզիայում։" },
-        { word: "ձկնկուլ", hint: "Ո՞ր ջրային թռչունն է սնվում հիմնականում ձկներով և ունի երկար, նեղ կտուց։" },
-        { word: "կեռնեխ", hint: "Ո՞ր թռչունն է ճանաչվում իր դեղնավուն փորով և հաճախ հանդիպում է այգիներում։" },
-        { word: "սևաձի", hint: "Ո՞ր թռչունն է խորհրդանշում խավարն ու խորհրդավորությունը և հաճախ կապված է ժողովրդական հավատալիքների հետ։" },
+        { word: "falcon", hint: "A fast bird of prey." },
+        { word: "ostrich", hint: "The largest bird, but it cannot fly." },
+        { word: "eagle", hint: "A large bird of prey with keen eyesight." },
+        { word: "parrot", hint: "A colorful bird that can mimic speech." },
+        { word: "owl", hint: "A bird that is active at night." },
+        { word: "sparrow", hint: "A small, common brown bird." },
+        { word: "peacock", hint: "A bird famous for its beautiful tail feathers." },
+        { word: "swan", hint: "A large white water bird with a long neck." },
+        { word: "hummingbird", hint: "A tiny bird that can hover in the air." },
+        { word: "pigeon", hint: "A common bird found in cities." }
     ],
     auto: [
-        { word: "շարժիչ", hint: "Ի՞նչ մաս է ավտոմեքենայի, որը արտադրում է շարժման էներգիա։" },
-        { word: "տրանսմիսիա", hint: "Ի՞նչ համակարգ է ավտոմեքենայում, որը փոխանցում է շարժիչի էներգիան անիվներին։" },
-        { word: "ադմիստրատոր", hint: "Ի՞նչ համակարգ է օգտագործվում ավտոմեքենայում, որն ապահովում է կառավարման կենտրոնը։" },
-        { word: "բալոն", hint: "Ի՞նչ մաս է ավտոմեքենայի, որը պահպանում է շրջապատի հետ կապի և աշխատանքային ճնշման բարձրությունը։" },
-        { word: "ելեկտրամոտոր", hint: "Ի՞նչ մաս է օգտագործվում էլեկտրական շարժման համակարգերում։" },
-        { word: "պատվար", hint: "Ի՞նչ մաս է հանդիսանում ավտոմեքենայի կողային պաշտպանությունը բախումների դեպքում։" },
-        { word: "ֆիլտր", hint: "Ի՞նչ սարք է ավտոմեքենայի շարժիչում, որը թույլ է տալիս մաքրելու օդը կամ վառելիքը։" },
-        { word: "թրթուռ", hint: "Ի՞նչ տրանսպորտային միջոցի մաս է, որը օգնում է տեղափոխել մեքենան առանց մեծ մղման կորուստների։" },
-        { word: "լամպ", hint: "Ի՞նչ ավտոմեքենայի մաս է ապահովում լուսավորությունը ցերեկային ու գիշերային պայմաններում։" },
-        { word: "անվադող", hint: "Ի՞նչ մաս է ավտոմեքենայի, որը ապահովում է կպչում ճանապարհին և թույլ է տալիս մեքենային շարժվել։" },
+        { word: "engine", hint: "The part of a car that produces power." },
+        { word: "transmission", hint: "The gears that transmit power to the wheels." },
+        { word: "clutch", hint: "A pedal used to change gears." },
+        { word: "radiator", hint: "The part that cools the car engine." },
+        { word: "battery", hint: "The part that provides electricity to start the car." },
+        { word: "exhaust", hint: "The pipe that carries waste gases away." },
+        { word: "steering", hint: "The wheel used to control direction." },
+        { word: "braking", hint: "The system used to stop the vehicle." },
+        { word: "chassis", hint: "The base frame of a motor vehicle." },
+        { word: "piston", hint: "A part inside the engine that moves up and down." }
     ]
 };
 
+// --- Game Logic ---
 
-const armenianAlphabet = "աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցուփքօֆ".split("");
+const englishAlphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 let selectedWord = "", selectedHint = "", correctLetters = [], wrongLetters = [], gameOver = false;
 let wins = 0, currentStep = 1;
-
-function playSound(id) {
-    const audio = document.getElementById(id);
-    if (audio) { audio.currentTime = 0; audio.play().catch(() => {}); }
-}
 
 function getRandomWord() {
     const category = document.getElementById("category").value;
@@ -151,8 +147,7 @@ function getRandomWord() {
     } else {
         pool = wordCategories[category] || [];
     }
-    // Եթե բառ չկա, որպեսզի սխալ չտա (undefined), վերադարձնում ենք default
-    return pool.length > 0 ? pool[Math.floor(Math.random() * pool.length)] : {word: "հայաստան", hint: "Մեր երկիրը"};
+    return pool.length > 0 ? pool[Math.floor(Math.random() * pool.length)] : {word: "coding", hint: "Creating software."};
 }
 
 function updateDisplay() {
@@ -168,21 +163,17 @@ function updateDisplay() {
     parts.forEach((p, i) => p.style.display = i < wrongLetters.length ? "block" : "none");
 
     if (wrongLetters.length >= parts.length) {
-        document.getElementById("message").innerHTML = `<span style="color:#ff7675">Պարտություն: Բառն էր՝ ${selectedWord}</span>`;
+        document.getElementById("message").innerHTML = `<span style="color:#ff7675">Game Over! Word: ${selectedWord.toUpperCase()}</span>`;
         gameOver = true;
-        playSound("lose-sound");
     }
 }
 
 function handleInput(letter, keyEl) {
     if (gameOver || correctLetters.includes(letter) || wrongLetters.includes(letter)) return;
-
     if (selectedWord.includes(letter)) {
         correctLetters.push(letter);
-        playSound("correct-sound");
     } else {
         wrongLetters.push(letter);
-        playSound("wrong-sound");
     }
     if (keyEl) keyEl.classList.add("used");
     updateDisplay();
@@ -191,19 +182,18 @@ function handleInput(letter, keyEl) {
 
 function checkWin() {
     if (selectedWord.split("").every(l => correctLetters.includes(l))) {
-        document.getElementById("message").innerHTML = `<span style="color:#55efc4">Հրաշալի է: Հաղթանակ:</span>`;
+        document.getElementById("message").innerHTML = `<span style="color:#55efc4">Victory! Well done!</span>`;
         gameOver = true;
         wins++;
         document.getElementById("wins").innerText = wins;
         confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
-        playSound("win-sound");
         if (currentStep < 10) document.getElementById("next-word").classList.remove("hidden");
     }
 }
 
 function start() {
     const obj = getRandomWord();
-    selectedWord = obj.word;
+    selectedWord = obj.word.toLowerCase();
     selectedHint = obj.hint;
     correctLetters = []; wrongLetters = []; gameOver = false;
     document.getElementById("category-selection").classList.add("hidden");
@@ -213,7 +203,7 @@ function start() {
     
     const kb = document.getElementById("keyboard");
     kb.innerHTML = "";
-    armenianAlphabet.forEach(l => {
+    englishAlphabet.forEach(l => {
         const d = document.createElement("div");
         d.className = "key"; d.innerText = l;
         d.onclick = () => handleInput(l, d);
@@ -225,3 +215,10 @@ function start() {
 document.getElementById("start-game").onclick = start;
 document.getElementById("next-word").onclick = () => { currentStep++; document.getElementById("step").innerText = currentStep; start(); };
 document.getElementById("play-again").onclick = () => location.reload();
+
+document.addEventListener("keydown", (e) => {
+    const char = e.key.toLowerCase();
+    if (englishAlphabet.includes(char)) {
+        handleInput(char);
+    }
+});
