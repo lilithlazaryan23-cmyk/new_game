@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORD TRAP - Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WORD TRAP</h1>
+            <div class="stats-bar">
+                <span>🏆 Wins: <b id="wins">0</b></span>
+                <span>🧩 Level: <b id="step">1</b>/10</span>
+            </div>
+        </header>
+
+        <div id="category-selection" class="card">
+            <h2>Select a Category</h2>
+            <select id="category">
+                <option value="all">All Categories</option>
+                <option value="nature">Nature</option>
+                <option value="food">Food</option>
+                <option value="animals">Animals</option>
+                <option value="technology">Technology</option>
+                <option value="culture">Culture</option>
+            </select>
+            <button id="start-game">Start Game</button>
+        </div>
+
+        <div id="game-container" class="hidden">
+            <div class="visual-section">
+                <svg height="200" width="150" class="figure-container">
+                    <line x1="20" y1="190" x2="130" y2="190" />
+                    <line x1="40" y1="190" x2="40" y2="20" />
+                    <line x1="40" y1="20" x2="100" y2="20" />
+                    <line x1="100" y1="20" x2="100" y2="40" />
+                    <circle cx="100" cy="60" r="20" class="figure-part" />
+                    <line x1="100" y1="80" x2="100" y2="130" class="figure-part" />
+                    <line x1="100" y1="90" x2="80" y2="110" class="figure-part" />
+                    <line x1="100" y1="90" x2="120" y2="110" class="figure-part" />
+                    <line x1="100" y1="130" x2="80" y2="160" class="figure-part" />
+                    <line x1="100" y1="130" x2="120" y2="160" class="figure-part" />
+                </svg>
+                <div id="hint-box">
+                    <p><b>Hint:</b> <span id="hint-text"></span></p>
+                </div>
+            </div>
+
+            <div id="word"></div>
+            <p class="wrong-info">Wrong letters: <span id="wrong-letters"></span></p>
+            <div id="message"></div>
+            <div id="keyboard"></div>
+
+            <div class="controls">
+                <button id="next-word" class="hidden btn-next">Next →</button>
+                <button id="play-again" class="btn-reset">Main Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
